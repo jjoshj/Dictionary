@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Palette+Mosaic&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3A352F;
+    width: 100%;
+    background-image: url("./background.jpg");
+    background-repeat: no-repeat, repeat;  
+    background-position: center;
+    background-size: cover;
+}
+.welcomeNote{
+  font-family: 'Palette Mosaic', cursive;
+}
+.search-area{
+ text-align: center;
+ color:#B0071E;
+}
+
+.words-container{
+ padding:20px;
+}
+.searched-word{
+    background-image: url("./word\ display.jpg");
+    background-repeat: no-repeat, repeat;  
+    background-position: center;
+  font-family: 'Bebas Neue', cursive;
+ 
+  border-radius:10px;
+  text-align:center;
+  border: 1px solid black;
+  
+}
+.sound{
+    background-image: url("./audio.png");
+    background-repeat: no-repeat, repeat;  
+    background-position: center;
+    background-size: cover;
+  border-radius:10px;
+  text-align:center;
+  border: 1px solid black;
+  height:100%;
+}
+.partofspeech1{
+    background-image: url("./old-retro-antique-vintage.jpg");
+    background-repeat: no-repeat, repeat;  
+    background-position: center;
+    background-size: cover;
+ color:white;
+  border-radius:10px;
+  text-align:center;
+  border: 1px solid black;
+  height:100%;
+}
+.partofspeech2{
+    background-image: url("./old-retro-antique-vintage.jpg");
+    background-repeat: no-repeat, repeat;  
+    background-position: center;
+    background-size: cover;
+ color:white;
+  border-radius:10px;
+  text-align:center;
+  border: 1px solid black;
+  height:100%;
+}
+@media (min-width: 525px){
+   .welcomeNote{
+     font-size: 55px;
+  }
+  .words-container{
+    display:grid;
+    gap:20px;
+    text-align:center;
+}
+  .search-tab{
+      height:20px;
+      width:500px;
+    }
+    .search-key{
+       height:30px;
+      width:140px;
+      font-weight: bolder;
+      font-size: 18px;
+    }
+ input,
+input::-webkit-input-placeholder {
+    font-size: 19px;
+    line-height: 3;
+}
+} 
+@media (min-width: 1100px){
+ 
+  .words-container{
+    display:grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr ;
+    place-items: center;
+  text-align:center;    
+}
+  .searched-word{
+    grid-column: span 4;
+    width:525px;
+   
+  }
+  .sound{
+    grid-column: span 4;
+     width:525px;
+  }
+  .partofspeech1{
+    grid-column: span 2;
+     width:525px;
+  }
+  .partofspeech2{
+    grid-column: span 2;
+     width:525px;
+    
+  }
+} 
